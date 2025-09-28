@@ -9,12 +9,12 @@ Este projeto utiliza o Cypress com Cucumber, usando a linguagem Gherkin para aut
 - npm (versão 10 ou superior)
 
 ### 📁 Estrutura do projeto
-├── cypress/
-│   ├── e2e/
-│       ├── Features         ← Arquivos `.feature` com os cenários escritos em Gherkin
-│       ├── Step_definitions ← Arquivos `.js` com os passos definidos para os testes
-├── cypress.config.js        ← Configurações do Cypress
-├── package.json
+├── cypress/ <br>
+│     &nbsp;&nbsp;&nbsp;&nbsp;    ├── e2e/ <br>
+│     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  ├── features &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ← Arquivos `.feature` com os cenários escritos em Gherkin <br>
+│     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  ├── step_definitions &nbsp;&nbsp;&nbsp;&nbsp; ← Arquivos `.js` com os passos definidos para os testes <br>
+├── cypress.config.js &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ← Configurações do Cypress <br>
+├── package.json <br>
 └── README.md
 
 ### Instalação
@@ -55,5 +55,7 @@ Os testes são executados contra a aplicação Buggy Rating disponível em:
 
 A Buggy Rating é uma aplicação de exemplo que simula um site de classificação de carros, permitindo:
 - Cadastro e login de usuários
+- Logout do sistema
+- Alteração de senha
 - Formulários de informações pessoais
 
