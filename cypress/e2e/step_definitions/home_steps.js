@@ -1,10 +1,10 @@
 import { Given, When, Then } from '@badeball/cypress-cucumber-preprocessor'
 
-Given('que o usuário acessa a aplicação', () => {
+Given('que o usuário acessa a página inicial', () => {
   cy.visit('/')
 })
 
-When('a página inicial carrega', () => {
+When('a página inicial carregar', () => {
   cy.get('body').should('be.visible')
   cy.url().should('include', 'buggy.justtestit.org')
 })

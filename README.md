@@ -33,7 +33,16 @@ Este projeto utiliza o Cypress com Cucumber, usando a linguagem Gherkin para aut
    ```bash
    npm install cypress --save-dev
    ```
-
+4. **Instalar o pré-processador Cucumber oficial para Cypress:**
+   Permite escrever testes usando a sintaxe Gherkin (.feature)
+   ```bash
+   npm install --save-dev @badeball/cypress-cucumber-preprocessor
+   ```
+5. **Este pacote é um pré-processador de código baseado no esbuild, usado para compilar/transformar os arquivos de teste:**
+   Compila os arquivos .js, .ts, ou .feature de forma rápida com esbuild.
+   ```bash
+   npm install --save-dev @bahmutov/cypress-esbuild-preprocessor
+   ```
 ### Executando os testes
 
 #### Modo interativo (Cypress Test Runner)
