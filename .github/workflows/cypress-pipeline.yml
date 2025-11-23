@@ -4,7 +4,7 @@ name: run Basic Testes
 # evento que dispara a pipeline
 on:
   pull_request:
-    branches: [main]
+    branches: [staging]
 
 # jobs da pipeline
 jobs:
@@ -17,11 +17,17 @@ jobs:
     steps:
       # clone do projeto
       - name: Checkout/Clone do projeto
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+
+      # Setup Node (importante para versões específicas)
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
 
         # exemplo de execução no terminal
       - name: instalar dependências
-        run: npm install
+        run: npm ci
 
         # execução dos testes do projeto
       - name: Run testes
