@@ -14,7 +14,7 @@ Funcionalidade: Fazer login no sistema
     Quando o usuário preenche o email com "usuario@errado.com"
     E o usuário preenche a senha com "senhaerrada"
     E o usuário clica no botão de login
-    Então deve aparecer a mensagem de erro "Invalid username/password"
+    Então deve aparecer a mensagem de erro "Anvalid username/password"
 
   Cenário: Login com sucesso e atualização de perfil
     Dado que o usuário acessa a página inicial

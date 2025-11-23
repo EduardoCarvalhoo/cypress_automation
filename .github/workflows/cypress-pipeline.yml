@@ -1,10 +1,10 @@
 # nome da pipeline
-name: run Basic Testes
+name: Run Basic Testes
 
 # evento que dispara a pipeline
 on: 
   pull_request:
-    branches: [main]
+    branches: [master]
 
 # jobs da pipeline
 jobs:
@@ -17,7 +17,7 @@ jobs:
     steps:
       # clone do projeto
       - name: Checkout/Clone do projeto
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       # exemplo de execução no terminal
       - name: instalar dependências
