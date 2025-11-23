@@ -5,6 +5,7 @@ const { createEsbuildPlugin } = require('@badeball/cypress-cucumber-preprocessor
 
 module.exports = defineConfig({
   e2e: {
+    projectId: "nqxz33",
     baseUrl: 'https://buggy.justtestit.org/',
     viewportWidth: 1300,
     viewportHeight: 800,
